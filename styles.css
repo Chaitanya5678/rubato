@@ -1,0 +1,58 @@
+
+.content
+{
+    padding: 3% 5% 5% 5%;
+}
+
+.header
+{
+    overflow: hidden;
+    position: fixed;
+    width: 90%;
+    background-color: #f1f1f1;
+}
+
+.container
+{
+    display: flex;
+}
+
+.main
+{
+    overflow-y: scroll;
+    flex: 12;
+    height: 77vh;
+    margin-top: 7%;
+}
+
+/* Hide scrollbar */
+
+.main::-webkit-scrollbar, .aside::-webkit-scrollbar {
+    display: none;
+}
+
+.main, .aside {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+
+.aside
+{
+    flex: 5;
+    margin-top: 7%;
+    margin-right: 4.5%;
+    background-color: skyblue;
+    height: 77vh;
+    width: 25%;
+    position: fixed;
+    right: 0;
+}
+
+.section
+{
+    box-sizing: border-box;
+    width: 70%;
+    background-color: pink;
+    height: 15em;
+}
