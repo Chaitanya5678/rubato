@@ -1,4 +1,14 @@
 
+html,body
+{
+    overflow: hidden;
+}
+
+*
+{
+    border-radius: 15px;
+}
+
 .content
 {
     padding: 3% 5% 5% 5%;
@@ -22,7 +32,7 @@
     overflow-y: scroll;
     flex: 12;
     height: 77vh;
-    margin-top: 7%;
+    margin-top: 8%;
 }
 
 /* Hide scrollbar */
@@ -36,6 +46,25 @@
   scrollbar-width: none; 
 }
 
+.tile
+{
+    background-color: burlywood;
+    flex: 1;
+    margin: 1.5%;
+
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a1;
+    transition: all ease 0.4s;
+}
+
+.tile:hover
+{
+    box-shadow: none;
+    transform: scale(1.1) translateY(5px);
+}
 
 .aside
 {
@@ -53,6 +82,8 @@
 {
     box-sizing: border-box;
     width: 70%;
-    background-color: pink;
     height: 15em;
+    display: flex;
+
+
 }
